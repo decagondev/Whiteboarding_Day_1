@@ -4,5 +4,16 @@
 # think about if a loop or some nested logic would be a good fit
 # think about possible valid items
 
-def isValid(self, s):
+def isValid(s):
     pass
+
+
+
+# tests
+print(isValid("()")) # => True
+print(isValid("()[]{}")) # => True
+print(isValid("(]")) # => False
+print(isValid("([)]")) # => False
+print(isValid("{[]}")) # => True
+print(isValid("")) # => True
+
